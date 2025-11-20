@@ -18,6 +18,6 @@ from ollama import chat
 # for chunk in stream:
 #   print(chunk['message']['content'], end='', flush=True)
 
-response = ollama.generate(model='llama3.1', prompt='Why is the sky blue?')
+response = ollama.generate(model='llama3.1:8b', prompt='Why is the sky blue?')
 
 print(response['response'])

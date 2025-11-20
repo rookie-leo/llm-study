@@ -12,8 +12,7 @@ button = st.button(label= "OK")
 if button:
     if prompt:
         while True:
-            response = ollama.generate(model='llama3.1', prompt=prompt + "\nNote: Você é um estudante da prova da ANBIMA CPA-20, é o melhor da classe, então sabe responder ou indicar perguntas")
-            # response = ollama.generate(model='llama3.1', prompt=prompt + "\nNote: Output must have is in pt-br and only python code, do not add any other explanation")
+            response = ollama.generate(model='llama3.1:8b', prompt=prompt + "\nNote: Output must have is in pt-br and only python code, do not add any other explanation")
             old_stdout = sys.stdout
             sys.stdout = buffer = io.StringIO()
 
@@ -50,5 +49,5 @@ Can you explain why we used this code
 in the following code:
 {st.session_state["response"]}
 """
-    answer = ollama.generate(model='llama3.1', prompt=prompt)
+    answer = ollama.generate(model='llama3.1:8b', prompt=prompt)
     st.markdown(answer["response"])
