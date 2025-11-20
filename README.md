@@ -26,3 +26,11 @@ Este repositório contém meus estudos sobre as tecnologias OLLAMA, LangChain e 
 * OLLAMA SDK
 * LangChain SDK
 * Hugging Face Transformers
+
+**Conteúdo do repositório:**
+
+O repositório será dividido em pastas com os seguintes conteúdos:
+
+* `ollama_estudos`: Código e experimentos relacionados a estudos sobre OLLAMA.
+* `langchain_estudos`: Código e experimentos relacionados a estudos sobre LangChain.
+* `hugging_face_estudos`: Código e experimentos relacionados a estudos sobre Hugging Face.
