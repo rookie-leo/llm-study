@@ -27,5 +27,3 @@ Pergunta: {question}
     except Exception as ex:
         st.error('Erro ao processar modelo')
         st.exception(ex)
-
-
